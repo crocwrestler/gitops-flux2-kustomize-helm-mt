@@ -25,3 +25,5 @@ spec:
       enabled: true
       annotations:
         kubernetes.io/ingress.class: nginx
+    nodeSelector:
+      kubernetes.io/os: linux
