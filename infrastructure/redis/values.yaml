@@ -5,10 +5,16 @@ cluster:
   enabled: false
 master:
   persistence:
-    enabled: false
+    size: 2Gi
+    enabled: true
+  nodeSelector:
+    kubernetes.io/os: linux
 replica:
   persistence:
-    enabled: false
+    size: 2Gi
+    enabled: true
+  nodeSelector:
+    kubernetes.io/os: linux
 
 volumePermissions:
   enabled: true
