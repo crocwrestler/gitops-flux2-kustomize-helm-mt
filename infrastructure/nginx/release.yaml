@@ -25,3 +25,6 @@ spec:
       type: NodePort
     ingressClassResource:
       name: nginx
+    controller:
+      nodeSelector:
+        kubernetes.io/os: linux
